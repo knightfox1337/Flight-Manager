@@ -17,7 +17,7 @@
   <p align="center">
     An example project to display flight times in a neat grid
     <br />
-    <!-- <a href="#">View Demo</a> -->
+    <a href="https://flightmanager.richielennox.co.uk/">View Demo</a>
   </p>
 </div>
 
