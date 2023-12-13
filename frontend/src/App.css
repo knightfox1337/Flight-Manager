@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #111;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+} 
+
+.rct-item-content{
+  width: 100%;
+  padding: 0;
+}
+
+.rct-item-content .contain{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.rct-item-content .contain div{
+  position: absolute;
+  line-height: 24px;
+}
+
+.rct-item-content div.topLeft{
+  top: 0;
+  left: 5px;
+}
+
+.rct-item-content div.topRight{
+  top: 0;
+  right: 5px;
+}
+.rct-item-content div.middle{
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.rct-item-content div.bottomLeft{
+  bottom: 0;
+  left: 5px;
+}
+.rct-item-content div.bottomRight{
+  bottom: 0;
+  right: 5px;
+}
+.react-calendar-timeline .rct-dateHeader{
+  background-color: #fff;
+}
+.react-calendar-timeline .rct-header-root, .react-calendar-timeline .rct-dateHeader-primary{
+  background-color: #93A8AC;
+}
+.react-calendar-timeline .rct-scroll, .react-calendar-timeline .rct-sidebar{
+  background-color: #fff;
+}
+.react-calendar-timeline .rct-horizontal-lines .rct-hl-odd, .react-calendar-timeline .rct-sidebar .rct-sidebar-row.rct-sidebar-row-odd{
+  background-color: rgba(66,75,84,0.2);
+}
+
+.react-calendar-timeline .rct-vertical-lines .rct-vl.rct-day-6, .react-calendar-timeline .rct-vertical-lines .rct-vl.rct-day-0{
+  background-color: rgba(226,180,189,0.2);
+}
+.rct-items > div{
+  background-color: #424B54 !important;
+  background: #424B54 !important;
+  border: #424B54 !important;
+  color: #fff !important;
+}
